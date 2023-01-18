@@ -64,7 +64,6 @@ console.log(ageSarah >= 20);
 
 const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
-*/
 
 let x, y;
 x = y = 25 - 10 - 5; // x = y = 10, x = 10, assignment is right to left
@@ -75,3 +74,18 @@ const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+//////////////////////////////////////////////////
+// CODING CHALLENGE #1
+
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 95;
+const johnHeight = 1.88;
+
+const markBMI = markWeight / (markHeight ** 2);
+const johnBMI = johnWeight / (johnHeight ** 2);
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
