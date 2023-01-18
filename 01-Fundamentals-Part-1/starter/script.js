@@ -36,9 +36,32 @@ year = 2023;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
 
 let age = 30; // let is mutable
 age = 31;
 
 const birthYear = 1999; // const is immutable
+*/
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+const firstName = 'Jonas';
+const lastName = 'Smith';
+console.log(firstName + ' ' + lastName);
+
+let x = 10 + 5; //15
+x += 10 //25
+x *= 4; //100
+x++; //101
+x--; //100
+console.log(x);
+
+console.log(ageJonas > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 20);
+
+const isFullAge = ageSarah >= 18;
+console.log(now - 1991 > now - 2018);
