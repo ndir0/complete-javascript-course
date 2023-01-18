@@ -16,7 +16,6 @@ let person = "Jonas";
 let PI = 3.141;
 let myFirstJob = "Coder";
 let mySecondJob = "Teacher";
-*/
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -37,3 +36,9 @@ year = 2023;
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+let age = 30; // let is mutable
+age = 31;
+
+const birthYear = 1999; // const is immutable
