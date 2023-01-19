@@ -74,7 +74,6 @@ const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
-*/
 
 //////////////////////////////////////////////////
 // CODING CHALLENGE #1
@@ -89,3 +88,23 @@ const johnBMI = johnWeight / (johnHeight ** 2);
 const markHigherBMI = markBMI > johnBMI;
 
 console.log(markBMI, johnBMI, markHigherBMI);
+*/
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2023;
+
+const jonas = "I'm " + firstName + ' a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName} a ${year - birthYear} years old ${job}!`; // backticks found above tab
+console.log(jonasNew)
+
+console.log('string with \n\
+multiple \n\
+lines');
+
+console.log(`string with
+multiple
+lines`);
