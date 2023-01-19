@@ -107,7 +107,6 @@ lines');
 console.log(`string with
 multiple
 lines`);
-*/
 
 const age = 16;
 if (age >= 18) {
@@ -125,3 +124,18 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+const weightMark = 78;
+const heightMark = 1.69;
+const BMIMark = weightMark / heightMark ** 2
+const weightJohn = 92;
+const heightJohn = 1.95;
+const BMIJohn = weightJohn / heightJohn ** 2
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI of ${BMIMark} is higher than John's`);
+} else {
+    console.log(`John's BMI of ${BMIJohn} is higher than Mark's'`);
+}
