@@ -155,7 +155,6 @@ console.log('23' / '2');
 let n = '1' + 1; // '11'
 n = n - 1;
 console.log(n);
-*/
 
 // falsy values: 0, '', undefined, null, NaN
 
@@ -178,3 +177,20 @@ if (height) {
 } else {
     console.log("Height is undefined")
 }
+*/
+
+const age = 18;
+if (age === 18) console.log("You're an adult (strict)");
+if (age == '18') console.log("You're an adult (loose)");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log("23 is cool")
+} else {
+    console.log(`${favourite} is ok`);
+}
+
+if (favourite !== 23) console.log("Why not 23?");
