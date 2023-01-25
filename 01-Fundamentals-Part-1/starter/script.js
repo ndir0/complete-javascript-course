@@ -193,7 +193,6 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23?");
-*/
 
 const hasLicense = true; // A
 const hasVision = false; // B
@@ -204,3 +203,44 @@ console.log(!hasLicense);
 
 const canDrive = hasLicense && !hasVision;
 if (canDrive) console.log("Can drive");
+*/
+
+////////////////////////////////////////////////////////////////
+// CODING CHALLENGE #2
+
+let averageDolphins = (96 + 108 + 89) / 3;
+let averageKoalas = (88 + 91 + 110) / 3;
+console.log("Dolphins: " + averageDolphins);
+console.log("Koalas: " + averageKoalas);
+if (averageDolphins > averageKoalas) {
+    console.log("Dolphins win!");
+} else if (averageKoalas > averageDolphins) {
+    console.log("Koalas win!");
+} else {
+    console.log("Draw");
+}
+
+console.log("");
+averageDolphins = (97 + 112 + 101) / 3;
+averageKoalas = (109 + 95 + 123) / 3
+console.log("Dolphins: " + averageDolphins);
+console.log("Koalas: " + averageKoalas);
+if ((averageDolphins > averageKoalas) && averageDolphins >= 100) {
+    console.log("Dolphins win!");
+} else if ((averageKoalas > averageDolphins) && averageKoalas >= 100) {
+    console.log("Koalas win!");
+} else {
+    console.log("Draw");
+}
+
+console.log("");
+averageKoalas = (109 + 95 + 106) / 3
+console.log("Dolphins: " + averageDolphins);
+console.log("Koalas: " + averageKoalas);
+if ((averageDolphins > averageKoalas) && averageDolphins >= 100) {
+    console.log("Dolphins win!");
+} else if ((averageKoalas > averageDolphins) && averageKoalas >= 100) {
+    console.log("Koalas win!");
+} else if ((averageDolphins === averageKoalas) && (averageDolphins >= 100) && (averageKoalas >= 100)) {
+    console.log("Draw");
+}
