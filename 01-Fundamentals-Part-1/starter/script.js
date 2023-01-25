@@ -203,7 +203,6 @@ console.log(!hasLicense);
 
 const canDrive = hasLicense && !hasVision;
 if (canDrive) console.log("Can drive");
-*/
 
 ////////////////////////////////////////////////////////////////
 // CODING CHALLENGE #2
@@ -243,4 +242,27 @@ if ((averageDolphins > averageKoalas) && averageDolphins >= 100) {
     console.log("Koalas win!");
 } else if ((averageDolphins === averageKoalas) && (averageDolphins >= 100) && (averageKoalas >= 100)) {
     console.log("Draw");
+}
+*/
+
+const day = 'wednesday';
+
+switch (day) {
+    case 'monday': // day === 'monday' (strict)
+        console.log('Go to meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Record videos');
+        break;
+    case 'friday':
+        console.log('Enjoy the day');
+        break;
+    case 'saturday':
+    case 'sunday':
+    default:
+        console.log('not valid');
 }
