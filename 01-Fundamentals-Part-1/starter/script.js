@@ -265,7 +265,6 @@ switch (day) {
     default:
         console.log('not valid');
 }
-*/
 
 const age = 23;
 // age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water");
@@ -282,3 +281,11 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+*/
+
+////////////////////////////////////////////////////////////////
+// CODING CHALLENGE #4
+
+const bill = Number(prompt("How much is the bill?:"));
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill is ${bill}, the tip is ${tip}, and the total value is ${bill + tip}`);
