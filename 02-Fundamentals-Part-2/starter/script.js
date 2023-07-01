@@ -29,7 +29,6 @@ console.log(fruitJuice);
 
 const num = Number('23');
 console.log(num);
-*/
 
 // function declaration
 function calcAge1(birthYear) {
@@ -44,3 +43,19 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
+*/
+
+// arrow function
+
+const calcAge3 = birthYear => 2023 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearLeft = (birthYear, firstName) => {
+    const age = 2023 - birthYear;
+    const retirement = 65 - age;
+    // return retirement
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearLeft(1991, 'John'));
