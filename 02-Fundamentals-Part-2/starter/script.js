@@ -70,7 +70,6 @@ function fruitProcessor(apples, oranges) {
     const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
     return juice;
 }
-*/
 
 function calcAverage(firstNum, secondNum, thirdNum) {
     return (firstNum + secondNum + thirdNum) / 3;
@@ -85,3 +84,26 @@ function checkWinner() {
         console.log(`Koalas win!`)
     }
 }
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends.length)
+console.log(friends[friends.length - 1])
+friends[2] = 'Adam';
+console.log(friends)
+
+const firstName = 'John';
+const jonas = [firstName, 'Doe', 2023 - 1991, 'teacher', friends]
+console.log(jonas);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+function calcAge(birthYear) {
+    return 2023 - birthYear;
+}
+
+const age1 = calcAge(years[0]);
+console.log(age1);
