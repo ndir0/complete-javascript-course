@@ -58,7 +58,6 @@ const yearLeft = (birthYear, firstName) => {
 }
 
 console.log(yearLeft(1991, 'John'));
-*/
 
 function cutFruit(fruit) {
     return fruit * 4;
@@ -70,4 +69,19 @@ function fruitProcessor(apples, oranges) {
 
     const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
     return juice;
+}
+*/
+
+function calcAverage(firstNum, secondNum, thirdNum) {
+    return (firstNum + secondNum + thirdNum) / 3;
+}
+
+function checkWinner() {
+    const scoreDolphins = calcAverage(44, 23, 71);
+    const scoreKoalas = calcAverage(65, 54, 49);
+    if (scoreDolphins > scoreKoalas) {
+        console.log(`Dolphins win!`)
+    } else {
+        console.log(`Koalas win!`)
+    }
 }
