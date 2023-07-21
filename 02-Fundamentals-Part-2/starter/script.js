@@ -142,7 +142,6 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 
 console.log(bills, tips, totals)
-*/
 
 const john = {
     firstName: 'John',
@@ -171,3 +170,26 @@ if (john[interested]) {
 john.location = 'Spain';
 john['social'] = '@johndoe'
 console.log(john)
+*/
+
+const john = {
+    firstName: 'John',
+    lastName: 'Doe',
+    birthYear: 1991,
+    job: 'Teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+
+    calcAge: function () {
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}`
+    }
+};
+
+console.log(john.calcAge());
+console.log(john.age);
+
+console.log(john.getSummary());
