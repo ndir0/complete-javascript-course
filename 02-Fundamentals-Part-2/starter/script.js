@@ -84,7 +84,6 @@ function checkWinner() {
         console.log(`Koalas win!`)
     }
 }
-*/
 
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
@@ -107,3 +106,26 @@ function calcAge(birthYear) {
 
 const age1 = calcAge(years[0]);
 console.log(age1);
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLength = friends.push('Adam'); // adds
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); // adds to first element
+console.log(friends);
+
+friends.pop(); // removes
+console.log(friends);
+
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // removes first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven')); // returns index
+
+console.log(friends.includes('Bob')); // returns boolean
