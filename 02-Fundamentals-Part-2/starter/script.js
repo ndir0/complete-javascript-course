@@ -106,7 +106,6 @@ function calcAge(birthYear) {
 
 const age1 = calcAge(years[0]);
 console.log(age1);
-*/
 
 const friends = ['Michael', 'Steven', 'Peter'];
 const newLength = friends.push('Adam'); // adds
@@ -129,3 +128,18 @@ console.log(friends);
 console.log(friends.indexOf('Steven')); // returns index
 
 console.log(friends.includes('Bob')); // returns boolean
+*/
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.2;
+    }
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
+
+console.log(bills, tips, totals)
