@@ -128,7 +128,6 @@ console.log(friends);
 console.log(friends.indexOf('Steven')); // returns index
 
 console.log(friends.includes('Bob')); // returns boolean
-*/
 
 function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
@@ -143,3 +142,32 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 
 console.log(bills, tips, totals)
+*/
+
+const john = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 2023 - 1999,
+    job: 'Teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(john);
+console.log(john.lastName);
+console.log(john['lastName']);
+
+const nameKey = 'Name';
+console.log(john['first' + nameKey]);
+console.log(john['last' + nameKey]);
+
+const interested = prompt('What field?');
+
+if (john[interested]) {
+    console.log(john[interested]);
+} else {
+    console.log('Not exist');
+}
+
+john.location = 'Spain';
+john['social'] = '@johndoe'
+console.log(john)
